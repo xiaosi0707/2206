@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    var num = "最编程";
+    try {
+        if (num == " ") throw "值为空"; //刚才这个地方的分号写成中文状态下的分号，结果出出错了
+        if (isNaN(num)) throw "不是数字";
+    } catch (err) {
+        alert("错误信息：" + err);
+    }
+    </script>
+</body>
+
+</html>
